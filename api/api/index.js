@@ -3,7 +3,8 @@
   router.use(passport.initialize());
 
   // Passport Configuration
-  router.use('/g', require('./google'));
+  router.use('/google', require('./google'));
+  router.use('/twitter', require('./twitter'));
 
   module.exports = router;
 
