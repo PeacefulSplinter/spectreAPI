@@ -15,7 +15,7 @@ exports.mailchimp = function (req, res) {
 		}
 	};
 
-	request.post(url:'https://us10.api.mailchimp.com/2.0/campaigns/list.json', {form: { key: testData}}, function optionalCallback(err, httpResponse, body) {
+	request.post('https://us10.api.mailchimp.com/2.0/campaigns/list.json', {form: { key: testData}}, function optionalCallback(err, httpResponse, body) {
 	  if (err) {
 	    return console.error('POST failed:', err);
 	  }
