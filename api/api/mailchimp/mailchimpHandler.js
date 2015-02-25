@@ -5,21 +5,10 @@ exports.mailchimp = function (req, res) {
     "apikey": $config.Mailchimp.API_KEY,
     "filters": {
         "campaign_id": "example campaign_id",
-        "status": "example status",
-        "type": "example type",
         "from_name": "example from_name",
         "from_email": "example from_email",
-        "title": "example title",
-        "subject": "example subject",
-        "sendtime_start": "example sendtime_start",
-        "sendtime_end": "example sendtime_end",
-        "uses_segment": true,
-        "exact": true
-    },
-    "start": 42,
-    "limit": 42,
-    "sort_field": "example sort_field",
-    "sort_dir": "example sort_dir"
+        "subject": "example subject"
+    }
 };
 
 
