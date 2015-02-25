@@ -4,8 +4,8 @@ var router = express.Router();
 router.use('/api', require('./api'));
 router.use('/grants', require('./grants'));
 // router.use('/integrations', require('./integrations'));
-router.use('/settings', require('./settings'));
-router.use('/widgets', require('./widgets'));
+// router.use('/settings', require('./settings'));
+// router.use('/widgets', require('./widgets'));
 
 
 module.exports = router;
