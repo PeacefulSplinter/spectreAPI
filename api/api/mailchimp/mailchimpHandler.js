@@ -1,3 +1,4 @@
+var request = require('request');
 exports.mailchimp = function (req, res) {
 
   var testData = {
