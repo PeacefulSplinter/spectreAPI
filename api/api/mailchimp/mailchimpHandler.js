@@ -5,10 +5,6 @@ exports.mailchimp = function (req, res) {
     "apikey": $config.Mailchimp.API_KEY,
     "filters": {
         "campaign_id": "example campaign_id",
-        "parent_id": "example parent_id",
-        "list_id": "example list_id",
-        "folder_id": 42,
-        "template_id": 42,
         "status": "example status",
         "type": "example type",
         "from_name": "example from_name",
