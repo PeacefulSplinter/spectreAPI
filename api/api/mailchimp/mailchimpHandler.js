@@ -1,21 +1,33 @@
 var request = require('request');
 exports.mailchimp = function (req, res) {
 
-  var testData = {
-		'apikey': $config.Mailchimp.API_KEY,
-		'filters' : {
-			'campaign_id': "example campaign_id",
-			'status': 'example',
-			'from_name': 'example',
-			'from_email': 'example',
-			'title': 'example',
-			'subject': 'example',
-			'comments_total': 'example',
-			'summary': 'example'
-		}
-	};
+  var test = {
+    "apikey": $config.Mailchimp.API_KEY,
+    "filters": {
+        "campaign_id": "example campaign_id",
+        "parent_id": "example parent_id",
+        "list_id": "example list_id",
+        "folder_id": 42,
+        "template_id": 42,
+        "status": "example status",
+        "type": "example type",
+        "from_name": "example from_name",
+        "from_email": "example from_email",
+        "title": "example title",
+        "subject": "example subject",
+        "sendtime_start": "example sendtime_start",
+        "sendtime_end": "example sendtime_end",
+        "uses_segment": true,
+        "exact": true
+    },
+    "start": 42,
+    "limit": 42,
+    "sort_field": "example sort_field",
+    "sort_dir": "example sort_dir"
+};
 
-	request.post('https://us10.api.mailchimp.com/2.0/campaigns/list.json', {form: { key: testData}}, function optionalCallback(err, httpResponse, body) {
+
+	request.post('https://us10.api.mailchimp.com/2.0/campaigns/list.json', {form: { key: test }}, function optionalCallback(err, httpResponse, body) {
 	  if (err) {
 	    return console.error('POST failed:', err);
 	  }
