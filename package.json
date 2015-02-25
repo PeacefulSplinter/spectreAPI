@@ -22,8 +22,10 @@
     "express": "^4.11.2",
     "google-oauth": "0.0.2",
     "lodash": "^3.3.0",
+    "mailchimp": "^1.1.0",
     "mongoose": "^3.8.23",
-    "passport": "^0.2.1"
+    "passport": "^0.2.1",
+    "request": "^2.53.0"
   },
   "devDependencies": {
     "gulp": "^3.8.11",

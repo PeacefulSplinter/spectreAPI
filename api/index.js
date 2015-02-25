@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+router.use('/api', require('./api'));
 router.use('/grants', require('./grants'));
 router.use('/integrations', require('./integrations'));
 router.use('/settings', require('./settings'));
