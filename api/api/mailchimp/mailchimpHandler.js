@@ -12,7 +12,7 @@ exports.mailchimp = function (req, res) {
 };
 
 
-	request.post('https://us10.api.mailchimp.com/2.0/campaigns/list.json', {form: { key: test }}, function optionalCallback(err, httpResponse, body) {
+	request.post('https://us10.api.mailchimp.com/2.0/campaigns/list.json?apikey=' + $config.Mailchimp.API_KEY, {form: { key: test }}, function optionalCallback(err, httpResponse, body) {
 	  if (err) {
 	    return console.error('POST failed:', err);
 	  }
