@@ -8,10 +8,9 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var app = express();
 
-// app.use(express.static('client/app'));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-// app.use(cookieParser());
 
 mongoose.connect($config.mongo.url);
 app.use('/api/v1', /*decode(),*/ require('./api'));
