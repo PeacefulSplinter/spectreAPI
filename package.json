@@ -11,6 +11,9 @@
     "type": "git",
     "url": "https://github.com/Radiobeat33/spectreAPI.git"
   },
+  "engines": {
+    "node": "0.10.x"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
